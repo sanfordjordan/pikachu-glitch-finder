@@ -15,7 +15,7 @@ def print_working_list():
     workingList.sort(key=lambda x: (x.totalFrames, x.moves, -x.finalPosition), reverse=False)
 
     for strategy in workingList:
-        print("Frames: ", strategy.totalFrames, " Moves: ", strategy.moves, " Position: ", round(strategy.finalPosition, 5), " Strategy: ", strategy.strategyList)
+        print("Frames: ", strategy.totalFrames, " Moves: ", strategy.moves, "\nPosition: ", round(strategy.finalPosition, 5), " Strategy: ", strategy.strategyList)
 
         
 def make_movement(startPosition, startFlow, recursion):
